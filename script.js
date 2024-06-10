@@ -1,9 +1,18 @@
-let character = "Hello";
-let count = 8;
- let rows = ["Naomi", "Quincy", "CamperChan"];
+const character = "#";
+const count = 8;
+const rows = [];
+function padRow(){
 
- console.log(rows[0]);
+}
+padRow();
+const call = padRow()
 
- rows[2] = 10; 
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i+1));
+}
+let result = ""
+for (const row of rows){
+  result = result + "\n" + row;
+}
 
- console.log(rows);
+console.log(result)
